@@ -1,9 +1,24 @@
 # Android-Character-Emmision-keyBoard
-This Project demonstrates Molecular Particle Dynamics in Android Environment
+This Project demonstrates Molecular Particle Dynamics in Android Environment.
 
 This projects is actually inspired from this a 9Gag Post shown in gif below :-
 
 ![Alt text](https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/inspiration.gif "inspiration")
+
+I am able to achieve this effect in android and here are scren shots of what it looks like in android :-
+
+![Alt text](https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/bubble.png "inspiration")
+
+![Alt text](https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/keys.png "Key Board Keys")
+
+You can change downword gravity and rotation speed of icons or you can toggle icons from keyboiard key to speech bubbles.
+
+
+See this in action on this video https://www.youtube.com/watch?v=PQVcn0YlnTs
+
+
+this project uses https://github.com/plattysoft/Leonids for emission.
+
 
 
 
