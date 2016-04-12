@@ -19,11 +19,13 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
+import com.bumptech.glide.Glide;
 import com.plattysoft.leonids.ParticleSystem;
 import com.serveroverload.emittor_key.util.AppConstants;
 import com.truizlop.fabreveallayout.FABRevealLayout;
@@ -43,7 +45,8 @@ public class MagicKeyboardFragment extends Fragment {
 	private MediaPlayer mp;
 	private View rootView;
 	private int position;
-	private TextView outEditText;
+	private EditText outEditText;
+	private TextView accValue, rotationValue;
 
 	public static MagicKeyboardFragment newInstance(int sectionNumber) {
 		MagicKeyboardFragment fragment = new MagicKeyboardFragment();
@@ -104,11 +107,6 @@ public class MagicKeyboardFragment extends Fragment {
 			outEditText = (EditText) rootView.findViewById(R.id.edit);
 
 		}
-		//
-		// ImageView im = (ImageView) findViewById(R.id.background);
-		//
-		// Glide.with(KeyBoardActivity.this).load("")
-		// .placeholder(R.drawable.typing_keyboard).into(im);
 
 		FABRevealLayout fabRevealLayout = (FABRevealLayout) rootView
 				.findViewById(R.id.fab_reveal_layout);
@@ -122,6 +120,12 @@ public class MagicKeyboardFragment extends Fragment {
 	private void setUpLayout() {
 		SeekBar rotationBar = (SeekBar) rootView.findViewById(R.id.rotn);
 		SeekBar accelarationBar = (SeekBar) rootView.findViewById(R.id.acc);
+
+		accValue = (TextView) rootView.findViewById(R.id.acc_Value);
+		rotationValue = (TextView) rootView.findViewById(R.id.rotnValue);
+
+		accValue.setText("Accelaration : " + accelarationBar.getProgress());
+		rotationValue.setText("Rotation : " + rotationBar.getProgress());
 
 		InputMethodManager imm = (InputMethodManager) getActivity()
 				.getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -159,6 +163,8 @@ public class MagicKeyboardFragment extends Fragment {
 
 				ROTATION_SPEED = progress;
 
+				rotationValue.setText("Rotation : " + progress);
+
 			}
 		});
 
@@ -182,6 +188,8 @@ public class MagicKeyboardFragment extends Fragment {
 							int progress, boolean fromUser) {
 
 						ACCELERATION = ((float) progress) / (-10000);
+
+						accValue.setText("Accelaration : " + progress);
 
 					}
 				});

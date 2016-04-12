@@ -15,9 +15,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Type Anything"
+        android:hint="@string/hint_text"
+        android:shadowColor="#FFA500"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="1.0"
         android:singleLine="true"
-        android:textColor="#000"
+        android:textColor="#FF0000"
         android:textSize="25sp" />
 
     <LinearLayout
@@ -238,39 +242,33 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:layout_margin="5dp" >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_centerInParent="true"
-                android:orientation="vertical"
-                android:weightSum="2" >
+            <TextView
+                android:id="@+id/acc_Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rotnValue"
+                android:text="Acceleration"
+                android:textColor="#00FF00"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/game_title_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1"
-                    android:text="Material"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/creator_name_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1"
-                    android:text="Android UIX"
-                    android:textStyle="bold" />
-            </LinearLayout>
+            <TextView
+                android:id="@+id/rotnValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/label_rotation"
+                android:textColor="#00FF00"
+                android:textStyle="bold" />
         </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_gravity="top"
+            android:layout_margin="5dp"
             android:orientation="vertical"
             android:weightSum="2" >
 

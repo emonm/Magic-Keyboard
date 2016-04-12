@@ -3,5 +3,8 @@
 
     <string name="app_name">KeyBoard Emission</string>
     <string name="action_settings">Settings</string>
+    <string name="hint_text">Type Anything</string>
+    <string name="label_gravity">Gravity</string>
+    <string name="label_rotation">Rotation</string>
 
 </resources>
