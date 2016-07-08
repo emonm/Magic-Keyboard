@@ -8,10 +8,9 @@ This projects is actually inspired from this a 9Gag Post shown in gif below :-
 I am able to achieve this effect in android and here are scren shots of what it looks like in android :-
 
 ![Alt text](https://github.com/hiteshsahu/Magic-Keyboard/blob/master/Gif/StarWars.png "inspiration")
-
 ![Alt text](https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/keys.png "Key Board Keys")
-
 ![Alt text](https://github.com/hiteshsahu/Magic-Keyboard/blob/master/Gif/Bubbles.png "Bubble Keys")
+![Alt text](https://github.com/hiteshsahu/Magic-Keyboard/blob/master/Gif/Control.png "inspiration")
 
 You can change downword gravity and rotation speed of icons or you can toggle icons from keyboiard key to speech bubbles.
 
