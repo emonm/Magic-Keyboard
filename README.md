@@ -11,12 +11,7 @@ This projects is inspired from a 9Gag Post:
 
 ## Screen shots
 
-<img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/keys.png" width="30%"> 
-<img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/key_1.png" width="30%"> 
-<img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/bubble.png" width="30%"> 
-<img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/bubble_1.png" width="30%"> 
-<img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/StarWars.png" width="30%"> 
-<img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/StarWars_1.png" width="30%"> 
+<img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/keys.png" width="30%"> <img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/key_1.png" width="30%"> <img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/bubble.png" width="30%"> <img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/bubble_1.png" width="30%"> <img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/StarWars.png" width="30%"> <img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/StarWars_1.png" width="30%"> 
 
 
 
