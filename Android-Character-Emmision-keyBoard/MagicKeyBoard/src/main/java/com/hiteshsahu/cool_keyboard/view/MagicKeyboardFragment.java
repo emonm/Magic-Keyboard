@@ -1,4 +1,4 @@
-package com.hiteshsahu.cool_keyboard;
+package com.hiteshsahu.cool_keyboard.view;
 
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
@@ -15,15 +15,13 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.hiteshsahu.cool_keyboard.R;
 import com.plattysoft.leonids.ParticleSystem;
 
 import java.util.HashMap;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
-import static com.hiteshsahu.cool_keyboard.HomeActivity.ACCELERATION;
-import static com.hiteshsahu.cool_keyboard.HomeActivity.ROTATION_SPEED;
 
 public class MagicKeyboardFragment extends Fragment implements TextWatcher {
     private final static int INT_VALUE_OF_A = 97; //int value of A
@@ -193,9 +191,9 @@ public class MagicKeyboardFragment extends Fragment implements TextWatcher {
                             getActivity().getPackageName());
 
             new ParticleSystem(getActivity(), 1, drawableRedId, 5000)
-                    .setAcceleration(ACCELERATION, 270)
+                    .setAcceleration(HomeActivity.ACCELERATION, 270)
                     .setSpeedModuleAndAngleRange(0f, 1.0f, 180, 360)
-                    .setRotationSpeed(ROTATION_SPEED)
+                    .setRotationSpeed(HomeActivity.ROTATION_SPEED)
                     .setFadeOut(200, new AccelerateInterpolator())
                     .emitWithGravity(rootView.findViewById(viewID),
                             Gravity.TOP,
@@ -218,9 +216,9 @@ public class MagicKeyboardFragment extends Fragment implements TextWatcher {
 
             new ParticleSystem(getActivity(), 1,
                     bubbleParticleMap.get(charToEmit), 5000)
-                    .setAcceleration(ACCELERATION, 270)
+                    .setAcceleration(HomeActivity.ACCELERATION, 270)
                     .setSpeedModuleAndAngleRange(0f, 1.0f, 180, 360)
-                    .setRotationSpeed(ROTATION_SPEED)
+                    .setRotationSpeed(HomeActivity.ROTATION_SPEED)
                     .setFadeOut(200, new AccelerateInterpolator())
                     .emitWithGravity(rootView.findViewById(viewID),
                             Gravity.TOP,
@@ -245,9 +243,9 @@ public class MagicKeyboardFragment extends Fragment implements TextWatcher {
 
             new ParticleSystem(getActivity(), 1,
                     starWarParticleMap.get(charToEmit), 5000)
-                    .setAcceleration(ACCELERATION, 270)
+                    .setAcceleration(HomeActivity.ACCELERATION, 270)
                     .setSpeedModuleAndAngleRange(0f, 1.0f, 180, 360)
-                    .setRotationSpeed(ROTATION_SPEED)
+                    .setRotationSpeed(HomeActivity.ROTATION_SPEED)
                     .setFadeOut(200, new AccelerateInterpolator())
                     .emitWithGravity(rootView.findViewById(viewID),
                             Gravity.TOP,

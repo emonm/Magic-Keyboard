@@ -8,6 +8,9 @@ android {
         applicationId "com.hiteshsahu.cool_keyboard"
         minSdkVersion 17
         targetSdkVersion 27
+        vectorDrawables.useSupportLibrary = true
+        versionCode 1
+        versionName "0.1"
     }
 
     buildTypes {

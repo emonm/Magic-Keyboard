@@ -9,4 +9,32 @@
     <string name="gravity">Accelaration :</string>
     <string name="rpm">Rotation :</string>
 
+
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="heading_general">General</string>
+    <string name="rate_app">Rate this App</string>
+    <string name="rate_app_info_text">Rate this App on Google Play</string>
+    <string name="share_label_text">Share</string>
+    <string name="share_app_info_text">Share this App with your friends</string>
+    <string name="heading_dev_info">Developer info</string>
+    <string name="label_mail_dev">Mail Developer</string>
+    <string name="info_mail_dev">Mail a request/bug to the developer</string>
+    <string name="label_call_dev">Contact Developer</string>
+    <string name="info_call_dev">Call Developer</string>
+    <string name="label_more_apps">More Apps</string>
+    <string name="info_more_app">View More Apps by Hitesh Sahu</string>
+    <string name="label_source">Source COde</string>
+    <string name="info_source">Show me the code</string>
+    <string name="heading_legal">Legal</string>
+    <string name="label_policy">Privacy Policy</string>
+    <string name="info_policy">Read what data we collect</string>
+    <string name="label_license">License</string>
+    <string name="info_licence">Open Source License</string>
+    <string name="info_release">Read release notes</string>
+    <string name="label_release">Release Notes</string>
+    <string name="copy_right">Copyright 2017 Hitesh Sahu (hiteshsahu.com)</string>
+    <string name="label_dev">Hitesh Sahu</string>
+    <string name="dev_info"><![CDATA[Design & Devloped By]]></string>
+
+
 </resources>

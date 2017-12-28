@@ -1,6 +1,7 @@
-package com.hiteshsahu.cool_keyboard;
+package com.hiteshsahu.cool_keyboard.view;
 
 import android.animation.ArgbEvaluator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
@@ -15,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.hiteshsahu.cool_keyboard.R;
 import com.hiteshsahu.cool_keyboard.util.AppConstants;
 
 import butterknife.BindView;
@@ -82,7 +84,7 @@ public class HomeActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.action_info:
-                // startActivity(new Intent(ECartHomeActivity.this, AboutActivity.class));
+                startActivity(new Intent(HomeActivity.this, AboutActivity.class));
                 return true;
         }
         return super.onOptionsItemSelected(item);

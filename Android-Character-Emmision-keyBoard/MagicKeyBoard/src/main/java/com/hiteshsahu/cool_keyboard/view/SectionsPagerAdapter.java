@@ -1,4 +1,4 @@
-package com.hiteshsahu.cool_keyboard;
+package com.hiteshsahu.cool_keyboard.view;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
