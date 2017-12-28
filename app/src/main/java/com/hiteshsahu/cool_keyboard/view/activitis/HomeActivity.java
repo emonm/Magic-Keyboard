@@ -2,12 +2,9 @@ package com.hiteshsahu.cool_keyboard.view.activitis;
 
 import android.animation.ArgbEvaluator;
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
@@ -20,17 +17,14 @@ import com.hiteshsahu.cool_keyboard.R;
 import com.hiteshsahu.cool_keyboard.view.adapter.SectionsPagerAdapter;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends BaseMaterialActivity {
     private ImageView[] indicators;
     private int[] colorList;
     public static float ACCELERATION = -0.00013f;
     public static int ROTATION_SPEED = 144;
     private ArgbEvaluator evaluator;
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
     @BindView(R.id.container)
     ViewPager demoPager;
     @BindView(R.id.rotnSeekBar)
@@ -44,25 +38,25 @@ public class HomeActivity extends AppCompatActivity {
     @BindView(R.id.tabs)
     TabLayout tabLayout;
 
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected int getActivityLayout() {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.demo_activity);
-        ButterKnife.bind(this);
-        evaluator = new ArgbEvaluator();
-        indicators = new ImageView[]{
-                (ImageView) findViewById(R.id.intro_indicator_0),
-                (ImageView) findViewById(R.id.intro_indicator_1),
-                (ImageView) findViewById(R.id.intro_indicator_2)};
-        colorList = new int[]{
-                ContextCompat.getColor(this, R.color.cyan),
-                ContextCompat.getColor(this, R.color.orange),
-                ContextCompat.getColor(this, R.color.green)};
+        return R.layout.demo_activity;
+    }
 
-        setUpLayout();
+    @Override
+    protected int getRevealBgColor() {
+        return R.color.primary_500;
+    }
+
+    @Override
+    protected void setUpToolBar() {
+        //Set Up Toolbar
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
     }
 
     private void updateIndicators(int position) {
@@ -90,11 +84,16 @@ public class HomeActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void setUpLayout() {
-
-        //Set Up Toolbar
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+    public void setUpLayout() {
+        evaluator = new ArgbEvaluator();
+        indicators = new ImageView[]{
+                (ImageView) findViewById(R.id.intro_indicator_0),
+                (ImageView) findViewById(R.id.intro_indicator_1),
+                (ImageView) findViewById(R.id.intro_indicator_2)};
+        colorList = new int[]{
+                ContextCompat.getColor(this, R.color.cyan),
+                ContextCompat.getColor(this, R.color.orange),
+                ContextCompat.getColor(this, R.color.green)};
 
         rotationBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
@@ -155,7 +154,7 @@ public class HomeActivity extends AppCompatActivity {
                                         positionOffset, colorList[position],
                                         colorList[position == 2 ? position
                                                 : position + 1]);
-                        demoPager.setBackgroundColor(colorUpdate);
+                        appRoot.setBackgroundColor(colorUpdate);
                     }
 
                     @Override

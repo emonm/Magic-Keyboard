@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_content"
+    android:id="@+id/app_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cyan">
@@ -11,6 +11,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/transparent"
         app:elevation="0dp"
         tools:context="com.rasfi.ai.ui.acivities.HomeActivity">
 
@@ -18,10 +19,9 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:title="Particle Physics"
+            android:background="@color/transparent"
             app:elevation="6dp"
             app:layout_collapseMode="pin"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:titleTextColor="@color/white" />
 
         <android.support.design.widget.TabLayout
@@ -29,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="@color/transparent"
             android:foregroundGravity="center"
             app:tabGravity="center"
             app:tabMode="scrollable"
@@ -49,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="#70000000"
+        android:background="#80000000"
         android:orientation="vertical">
 
         <TextView
@@ -57,9 +58,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="5dp"
-            android:text="Particle Physics"
+            android:text="Particles Settings"
             android:textColor="@color/white"
-            android:textSize="17sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <RelativeLayout
             android:layout_width="match_parent"
