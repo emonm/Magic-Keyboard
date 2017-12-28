@@ -1,4 +1,4 @@
-package com.hiteshsahu.cool_keyboard.view;
+package com.hiteshsahu.cool_keyboard.view.activitis;
 
 import android.animation.ArgbEvaluator;
 import android.content.Intent;
@@ -17,7 +17,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.hiteshsahu.cool_keyboard.R;
-import com.hiteshsahu.cool_keyboard.util.AppConstants;
+import com.hiteshsahu.cool_keyboard.view.adapter.SectionsPagerAdapter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -26,8 +26,8 @@ import butterknife.ButterKnife;
 public class HomeActivity extends AppCompatActivity {
     private ImageView[] indicators;
     private int[] colorList;
-    public static float ACCELERATION = AppConstants.ACCELERATION_DEFAULT;
-    public static int ROTATION_SPEED = AppConstants.ROTATION_SPEED_DEFAULT;
+    public static float ACCELERATION = -0.00013f;
+    public static int ROTATION_SPEED = 144;
     private ArgbEvaluator evaluator;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
@@ -111,7 +111,6 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress,
                                           boolean fromUser) {
-
                 ROTATION_SPEED = progress;
                 rotationValue.setText(getString(R.string.rpm) + ROTATION_SPEED);
 
@@ -139,7 +138,6 @@ public class HomeActivity extends AppCompatActivity {
 
                     }
                 });
-
 
         accValue.setText(getString(R.string.gravity) + accelarationBar.getProgress());
         rotationValue.setText(getString(R.string.rpm) + rotationBar.getProgress());

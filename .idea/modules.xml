@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Magic-Keyboard.iml" filepath="$PROJECT_DIR$/Magic-Keyboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/magicKeyBoard.iml" filepath="$PROJECT_DIR$/app/magicKeyBoard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design/design.iml" filepath="$PROJECT_DIR$/design/design.iml" />
+    </modules>
+  </component>
+</project>

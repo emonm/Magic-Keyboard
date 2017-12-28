@@ -1,8 +1,10 @@
-package com.hiteshsahu.cool_keyboard.view;
+package com.hiteshsahu.cool_keyboard.view.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.hiteshsahu.cool_keyboard.view.fragments.MagicKeyboardFragment;
 
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
@@ -12,6 +14,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
+
+        //Create new Demo Fragments
         return MagicKeyboardFragment.newInstance(position);
     }
 
@@ -26,7 +30,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return "TypeWriter";
             case 1:
-                return "Star Wars";
+                return "Star War";
             case 2:
                 return "Chat Bubble";
         }

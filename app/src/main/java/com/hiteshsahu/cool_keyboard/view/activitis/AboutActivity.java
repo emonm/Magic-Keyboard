@@ -9,7 +9,7 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
 
-package com.hiteshsahu.cool_keyboard.view;
+package com.hiteshsahu.cool_keyboard.view.activitis;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -34,6 +34,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hiteshsahu.cool_keyboard.R;
+import com.hiteshsahu.cool_keyboard.view.fragments.LicensesDialogFragment;
 
 import java.io.File;
 import java.util.List;
@@ -45,12 +46,10 @@ import butterknife.OnClick;
 
 public class AboutActivity extends AppCompatActivity {
 
-
     @BindView(R.id.app_version_code)
     TextView appVersion;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,7 +130,7 @@ public class AboutActivity extends AppCompatActivity {
         final Intent emailIntent = new Intent(
                 Intent.ACTION_SEND);
         emailIntent.setType("text/plain");
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"hiteshkrsahu@gmail.comf"});
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"hiteshkrsahu@gmail.com"});
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Hello There");
         emailIntent.putExtra(Intent.EXTRA_TEXT, "Add Message here");
         emailIntent.setType("message/rfc822");

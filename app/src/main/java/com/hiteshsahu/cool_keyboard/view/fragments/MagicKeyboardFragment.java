@@ -1,4 +1,4 @@
-package com.hiteshsahu.cool_keyboard.view;
+package com.hiteshsahu.cool_keyboard.view.fragments;
 
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
@@ -16,6 +16,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.hiteshsahu.cool_keyboard.R;
+import com.hiteshsahu.cool_keyboard.view.activitis.HomeActivity;
 import com.plattysoft.leonids.ParticleSystem;
 
 import java.util.HashMap;
@@ -57,19 +58,27 @@ public class MagicKeyboardFragment extends Fragment implements TextWatcher {
         initParticleMap();
         switch (fragmentPosition) {
             case 0:
+                //change typing sound
                 typeSoundPlayer = MediaPlayer.create(getActivity(), R.raw.type_sound);
+                //change Font
                 inputEditText.setTypeface(Typeface.createFromAsset(getActivity().getAssets(),
                         "Adler.ttf"));
+                //change BG
                 Glide.with(getActivity()).load(R.drawable.typewriter).into(bgCover);
                 break;
             case 1:
+                //change typing sound
                 typeSoundPlayer = MediaPlayer.create(getActivity(), R.raw.laser);
+                //change font
                 inputEditText.setTypeface(Typeface.createFromAsset(getActivity().getAssets(),
                         "Starjout.ttf"));
+                //change BG
                 Glide.with(getActivity()).load(R.drawable.vader).into(bgCover);
                 break;
             case 2:
+                //change typing sound
                 typeSoundPlayer = MediaPlayer.create(getActivity(), R.raw.type_sound);
+                //change BG
                 Glide.with(getActivity()).load(R.drawable.kitten).into(bgCover);
                 break;
         }
