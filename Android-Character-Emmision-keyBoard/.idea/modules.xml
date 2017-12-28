@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android-Character-Emmision-keyBoard.iml" filepath="$PROJECT_DIR$/Android-Character-Emmision-keyBoard.iml" />
       <module fileurl="file://$PROJECT_DIR$/design/design.iml" filepath="$PROJECT_DIR$/design/design.iml" />
+      <module fileurl="file://F:\Github\Magic-Keyboard\Android-Character-Emmision-keyBoard\design\design.iml" filepath="F:\Github\Magic-Keyboard\Android-Character-Emmision-keyBoard\design\design.iml" />
       <module fileurl="file://$PROJECT_DIR$/MagicKeyBoard/magicKeyBoard.iml" filepath="$PROJECT_DIR$/MagicKeyBoard/magicKeyBoard.iml" />
     </modules>
   </component>
