@@ -1,25 +1,14 @@
 # Android-Character-Emmision-keyBoard
 
-## Android experiment which use softkey input to trigger particle system and emots Keyboard keys, Star War charcters or chat bubbles.
+### This Android experiment uses softkey input events to trigger Leonids Android Particle System which in turn emits Keyboard keys, Star War characters & chat bubbles on key press.
 
-This projects is inspired from a 9Gag Post:
+  This experiment is originally inspired from a 9Gag Post(see image below). You can change Gravitational acceleartion and rotation speed of particles. See this in action on this video https://www.youtube.com/watch?v=1ytKEU1ZNRA&index=7&list=PLfqnqoVZRJoAWpkogqL0u8n1cP5yBUzGg
 
 ![Alt text](https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/inspiration.gif "inspiration")
-
-
-- You can change Gravitational acceleartion and rotation speed of particles.
 
 ## Screen shots
 
 <img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/keys.png" width="30%"> <img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/key_1.png" width="30%"> <img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/bubble.png" width="30%"> <img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/bubble_1.png" width="30%"> <img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/StarWars.png" width="30%"> <img src="https://github.com/hiteshsahu/Android-Character-Emmision-keyBoard/blob/master/Gif/StarWars_1.png" width="30%"> 
-
-
-
-
-See this in action on this video https://www.youtube.com/watch?v=PQVcn0YlnTs
-
-this project uses https://github.com/plattysoft/Leonids for emission.
-
 
 
 # Legal
