@@ -38,7 +38,6 @@ public class HomeActivity extends BaseMaterialActivity {
     @BindView(R.id.tabs)
     TabLayout tabLayout;
 
-
     @Override
     protected int getActivityLayout() {
         requestWindowFeature(Window.FEATURE_NO_TITLE);

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Magic-Keyboard.iml" filepath="$PROJECT_DIR$/Magic-Keyboard.iml" />
+      <module fileurl="file://F:\Github\Magic-Keyboard\Android-Character-Emmision-keyBoard\Magic-Keyboard.iml" filepath="F:\Github\Magic-Keyboard\Android-Character-Emmision-keyBoard\Magic-Keyboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design/design.iml" filepath="$PROJECT_DIR$/design/design.iml" />
+      <module fileurl="file://F:\Github\Magic-Keyboard\Android-Character-Emmision-keyBoard\app\magicKeyBoard.iml" filepath="F:\Github\Magic-Keyboard\Android-Character-Emmision-keyBoard\app\magicKeyBoard.iml" />
+    </modules>
+  </component>
+</project>
